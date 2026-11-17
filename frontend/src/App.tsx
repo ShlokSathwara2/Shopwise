@@ -5,6 +5,7 @@ import { CartProvider } from './context/CartContext'
 import { ToastProvider } from './context/ToastContext'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
+import { CinematicSplash } from './components/CinematicSplash'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { HomePage } from './pages/HomePage'
 import { ProductsPage } from './pages/ProductsPage'
@@ -45,6 +46,7 @@ function StorefrontLayout() {
 export default function App() {
   return (
     <BrowserRouter>
+      <CinematicSplash />
       <ToastProvider>
         <AuthProvider>
           <CartProvider>
