@@ -236,6 +236,6 @@ Import the repository with:
 | Build Command | `npm run build` |
 | Output Directory | `dist` |
 
-The frontend uses relative `/api` and `/static` paths, so copy `frontend/vercel.json.example` to `frontend/vercel.json`, replace `YOUR-SERVICE` with the Render hostname, and deploy. The rewrite file also adds the SPA fallback needed for React Router deep links.
+The frontend uses relative `/api` and `/static` paths. `frontend/vercel.json` is already configured for the deployed backend at `https://shopwise-uy29.onrender.com`; if the Render URL changes, update that file (or start from `frontend/vercel.json.example`). The rewrite file also adds the SPA fallback needed for React Router deep links.
 
 Verify `https://<your-app>.vercel.app/api/health` returns the Render health JSON, product images load from `/static/...`, and refreshing `/shop` does not 404.
