@@ -10,13 +10,18 @@ import { Stars } from './Stars'
 
 export function ProductImage({ src, alt, className = '' }: { src: string; alt: string; className?: string }) {
   const [failed, setFailed] = useState(false)
+  const [loaded, setLoaded] = useState(false)
   return (
     <img
       src={failed ? '/static/products/placeholder.svg' : src}
       alt={alt}
-      className={className}
+      className={`${className} ${loaded ? 'is-img-loaded' : 'is-img-loading'}`}
       loading="lazy"
-      onError={() => setFailed(true)}
+      onLoad={() => setLoaded(true)}
+      onError={() => {
+        setFailed(true)
+        setLoaded(true)
+      }}
     />
   )
 }

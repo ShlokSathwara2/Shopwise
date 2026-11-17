@@ -27,7 +27,16 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [profileOpen, setProfileOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const profileRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 15)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   useEffect(() => {
     setMenuOpen(false)
@@ -72,7 +81,7 @@ export function Navbar() {
         <span className="announcement__dot">·</span>
         <span>Considered packaging, always</span>
       </div>
-      <header className="site-header">
+      <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="shell site-header__inner">
           <button className="icon-button site-header__menu" onClick={() => setMobileOpen(true)} aria-label="Open menu">
             <Menu size={22} />
