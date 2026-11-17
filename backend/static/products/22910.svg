@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Paper Chain Kit Vintage Christmas">
+  <defs>
+    <linearGradient id="bg705" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CFD8C6"/>
+      <stop offset="100%" stop-color="#F4F5EC"/>
+    </linearGradient>
+    <filter id="grain705">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft705"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg705)"/>
+  <circle cx="309" cy="194" r="88" fill="#A33A2C" opacity=".16" filter="url(#soft705)"/>
+  <circle cx="159" cy="454" r="44" fill="#A33A2C" opacity=".08" filter="url(#soft705)"/>
+  <path d="M60 110h480" stroke="#223427" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#223427" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#223427" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#223427" opacity=".55" text-anchor="end">22910</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#223427" opacity=".07">PC</text>
+  <g transform="rotate(-1 300 380)">
+        <path d="M300 214v244" stroke="#223427" stroke-width="2"/>
+        <path d="M300 250c-70 8-98 74-92 118 34-6 70-34 92-72 22 38 58 66 92 72 6-44-22-110-92-118z" fill="#F4F5EC" stroke="#223427" stroke-width="2.4"/>
+        <circle cx="300" cy="388" r="16" fill="#A33A2C" opacity=".85"/>
+        <path d="M300 432l10 22 24 3-18 17 4 24-20-11-20 11 4-24-18-17 24-3 10-22z" fill="#A33A2C" opacity=".9"/>
+        <circle cx="240" cy="302" r="4" fill="#A33A2C"/><circle cx="356" cy="286" r="4" fill="#A33A2C"/><circle cx="338" cy="338" r="4" fill="#A33A2C"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#223427" opacity=".62">CHRISTMAS</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#223427" opacity=".55" text-anchor="end">No. 705</text>
+  <rect width="600" height="750" filter="url(#grain705)" opacity=".5"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Lighting">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F0DCB6"/><stop offset="100%" stop-color="#FFF8E7"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#C8963E" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#C8963E" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#3D2C18" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <ellipse cx="300" cy="480" rx="96" ry="20" fill="#3D2C18" opacity=".12"/>
+        <path d="M238 270h124l34 100H204l34-100z" fill="#FFF8E7" stroke="#3D2C18" stroke-width="2.4"/>
+        <path d="M300 370v92M270 466h60" fill="none" stroke="#3D2C18" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="300" cy="292" r="5" fill="#C8963E"/>
+        <path d="M188 410c22 34 62 52 112 52s90-18 112-52" fill="none" stroke="#C8963E" stroke-width="1.8" opacity=".55"/>
+        <path d="M176 438c30 40 76 60 124 60s94-20 124-60" fill="none" stroke="#C8963E" stroke-width="1.2" opacity=".3"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#3D2C18">Lighting</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#3D2C18" opacity=".6">60 PIECES</text>
+</svg>

@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-11-12T23:09:02",
+  "samples_per_endpoint": 40,
+  "warmup_requests": 5,
+  "results": {
+    "for-you": {
+      "path": "/api/recommendations/home?limit=10",
+      "median_ms": 15.41,
+      "p95_ms": 51.79,
+      "mean_ms": 21.14,
+      "min_ms": 6.27,
+      "max_ms": 81.22,
+      "payload_bytes": 5383,
+      "samples": 40
+    },
+    "trending": {
+      "path": "/api/recommendations/trending?limit=10",
+      "median_ms": 6.88,
+      "p95_ms": 30.09,
+      "mean_ms": 12.47,
+      "min_ms": 3.44,
+      "max_ms": 30.8,
+      "payload_bytes": 5409,
+      "samples": 40
+    },
+    "similar-291": {
+      "path": "/api/recommendations/similar/291?limit=8",
+      "median_ms": 6.42,
+      "p95_ms": 29.1,
+      "mean_ms": 12.54,
+      "min_ms": 3.26,
+      "max_ms": 30.9,
+      "payload_bytes": 4541,
+      "samples": 40
+    },
+    "also-bought-291": {
+      "path": "/api/recommendations/also-bought/291?limit=8",
+      "median_ms": 6.22,
+      "p95_ms": 28.81,
+      "mean_ms": 12.09,
+      "min_ms": 2.97,
+      "max_ms": 30.21,
+      "payload_bytes": 4461,
+      "samples": 40
+    },
+    "cart": {
+      "path": "/api/cart",
+      "median_ms": 15.04,
+      "p95_ms": 28.61,
+      "mean_ms": 15.38,
+      "min_ms": 3.15,
+      "max_ms": 52.27,
+      "payload_bytes": 1701,
+      "samples": 40
+    },
+    "catalogue-12": {
+      "path": "/api/products?page=1&page_size=12",
+      "median_ms": 4.77,
+      "p95_ms": 28.6,
+      "mean_ms": 12.3,
+      "min_ms": 3.09,
+      "max_ms": 128.97,
+      "payload_bytes": 6192,
+      "samples": 40
+    },
+    "search-bowl": {
+      "path": "/api/products?search=bowl&page_size=12",
+      "median_ms": 6.55,
+      "p95_ms": 30.3,
+      "mean_ms": 10.12,
+      "min_ms": 4.51,
+      "max_ms": 32.81,
+      "payload_bytes": 6322,
+      "samples": 40
+    },
+    "product-detail": {
+      "path": "/api/products/291",
+      "median_ms": 3.27,
+      "p95_ms": 26.09,
+      "mean_ms": 7.09,
+      "min_ms": 2.02,
+      "max_ms": 27.03,
+      "payload_bytes": 560,
+      "samples": 40
+    }
+  }
+}

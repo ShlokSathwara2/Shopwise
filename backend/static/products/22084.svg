@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Paper Chain Kit Empire">
+  <defs>
+    <linearGradient id="bg311" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D3DEE4"/>
+      <stop offset="100%" stop-color="#F1F5F6"/>
+    </linearGradient>
+    <filter id="grain311">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft311"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg311)"/>
+  <circle cx="386" cy="171" r="137" fill="#56798B" opacity=".16" filter="url(#soft311)"/>
+  <circle cx="236" cy="431" r="68" fill="#56798B" opacity=".08" filter="url(#soft311)"/>
+  <path d="M60 110h480" stroke="#1F313D" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#1F313D" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#1F313D" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#1F313D" opacity=".55" text-anchor="end">22084</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#1F313D" opacity=".07">PC</text>
+  <g transform="rotate(4 300 380)">
+        <path d="M234 458l15-68 140-142 54 52-140 142-69 16z" fill="#F1F5F6" stroke="#1F313D" stroke-width="2.4"/>
+        <path d="M252 390l54 52M389 248l54 52" fill="none" stroke="#1F313D" stroke-width="2"/>
+        <path d="M249 458l15-68 34 32-49 36z" fill="#56798B" opacity=".9"/>
+        <path d="M248 410l12-58 54 52-32 38-34-32z" fill="none" stroke="#56798B" stroke-width="1.4" opacity=".6"/>
+        <path d="M198 272h44M220 250v44M398 410h38M417 391v38" stroke="#56798B" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#1F313D" opacity=".62">STATIONERY</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#1F313D" opacity=".55" text-anchor="end">No. 311</text>
+  <rect width="600" height="750" filter="url(#grain311)" opacity=".5"/>
+</svg>

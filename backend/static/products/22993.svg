@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Set Of 4 Pantry Jelly Moulds">
+  <defs>
+    <linearGradient id="bg736" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D8DEE2"/>
+      <stop offset="100%" stop-color="#F4F7F8"/>
+    </linearGradient>
+    <filter id="grain736">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft736"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg736)"/>
+  <circle cx="329" cy="146" r="129" fill="#6D7D88" opacity=".16" filter="url(#soft736)"/>
+  <circle cx="179" cy="406" r="64" fill="#6D7D88" opacity=".08" filter="url(#soft736)"/>
+  <path d="M60 110h480" stroke="#2B343A" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#2B343A" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#2B343A" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#2B343A" opacity=".55" text-anchor="end">22993</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#2B343A" opacity=".07">SO</text>
+  <g transform="rotate(1 300 380)">
+        <circle cx="300" cy="366" r="104" fill="#F4F7F8" stroke="#2B343A" stroke-width="2.4"/>
+        <path d="M300 296l22 48 52 6-38 36 10 52-46-26-46 26 10-52-38-36 52-6 22-48z" fill="none" stroke="#6D7D88" stroke-width="2.2" stroke-linejoin="round"/>
+        <circle cx="300" cy="366" r="14" fill="#6D7D88" opacity=".24"/>
+        <path d="M186 330c-10 30-10 60 0 90M414 330c10 30 10 60 0 90" fill="none" stroke="#6D7D88" stroke-width="1.4" opacity=".4"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#2B343A" opacity=".62">EVERYDAY FINDS</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#2B343A" opacity=".55" text-anchor="end">No. 736</text>
+  <rect width="600" height="750" filter="url(#grain736)" opacity=".5"/>
+</svg>

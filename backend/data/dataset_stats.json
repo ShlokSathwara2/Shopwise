@@ -1,0 +1,18 @@
+{
+  "source": "UCI Machine Learning Repository - Online Retail II (ID 502)",
+  "source_url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+  "raw_transaction_lines": 775918,
+  "raw_customers": 5852,
+  "raw_products": 4608,
+  "catalog_products": 1000,
+  "categories": 13,
+  "seeded_customers": 750,
+  "historical_orders": 7463,
+  "historical_order_lines": 139381,
+  "historical_revenue": 2013661.88,
+  "date_range": [
+    "2025-03-24 06:26:40.953716986",
+    "2026-11-04 07:31:47.507678560"
+  ],
+  "generated_at": "2026-11-12T21:56:41"
+}

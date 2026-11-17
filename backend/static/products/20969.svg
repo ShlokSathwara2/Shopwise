@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Red Floral Feltcraft Shoulder Bag">
+  <defs>
+    <linearGradient id="bg45" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D2B7"/>
+      <stop offset="100%" stop-color="#FAF2E6"/>
+    </linearGradient>
+    <filter id="grain45">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft45"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg45)"/>
+  <circle cx="395" cy="193" r="139" fill="#A97742" opacity=".16" filter="url(#soft45)"/>
+  <circle cx="245" cy="453" r="69" fill="#A97742" opacity=".08" filter="url(#soft45)"/>
+  <path d="M60 110h480" stroke="#3B2A1B" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#3B2A1B" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#3B2A1B" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#3B2A1B" opacity=".55" text-anchor="end">20969</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#3B2A1B" opacity=".07">RF</text>
+  <g transform="rotate(-2 300 380)">
+        <ellipse cx="300" cy="470" rx="112" ry="22" fill="#3B2A1B" opacity=".12"/>
+        <path d="M225 310h150l22 146H203l22-146z" fill="#FAF2E6" stroke="#3B2A1B" stroke-width="2.4"/>
+        <path d="M262 310v-26c0-22 17-38 38-38s38 16 38 38v26" fill="none" stroke="#3B2A1B" stroke-width="2.4"/>
+        <path d="M244 356h112M233 390h134" stroke="#A97742" stroke-width="1.4" opacity=".55"/>
+        <circle cx="300" cy="404" r="5" fill="#A97742"/>
+        <path d="M203 424c64 16 130 16 194 0" fill="none" stroke="#A97742" stroke-width="1.2" opacity=".35"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#3B2A1B" opacity=".62">BAGS &amp; ACCESSORIES</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#3B2A1B" opacity=".55" text-anchor="end">No. 045</text>
+  <rect width="600" height="750" filter="url(#grain45)" opacity=".5"/>
+</svg>

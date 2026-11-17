@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Stationery">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#D3DEE4"/><stop offset="100%" stop-color="#F1F5F6"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#56798B" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#56798B" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#1F313D" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <path d="M234 458l15-68 140-142 54 52-140 142-69 16z" fill="#F1F5F6" stroke="#1F313D" stroke-width="2.4"/>
+        <path d="M252 390l54 52M389 248l54 52" fill="none" stroke="#1F313D" stroke-width="2"/>
+        <path d="M249 458l15-68 34 32-49 36z" fill="#56798B" opacity=".9"/>
+        <path d="M248 410l12-58 54 52-32 38-34-32z" fill="none" stroke="#56798B" stroke-width="1.4" opacity=".6"/>
+        <path d="M198 272h44M220 250v44M398 410h38M417 391v38" stroke="#56798B" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#1F313D">Stationery</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#1F313D" opacity=".6">85 PIECES</text>
+</svg>

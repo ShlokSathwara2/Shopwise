@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Kids &amp; Toys">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F1DEB4"/><stop offset="100%" stop-color="#FEF7E7"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#D28A3C" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#D28A3C" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#3A2A16" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <rect x="212" y="342" width="86" height="86" rx="8" fill="#FEF7E7" stroke="#3A2A16" stroke-width="2.4"/>
+        <rect x="310" y="342" width="86" height="86" rx="8" fill="#FEF7E7" stroke="#3A2A16" stroke-width="2.4"/>
+        <circle cx="255" cy="385" r="9" fill="none" stroke="#D28A3C" stroke-width="2"/>
+        <path d="M353 370l22 40h-44l22-40z" fill="none" stroke="#D28A3C" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M300 318c-6-36 16-58 44-64M300 318c-30-6-48-26-46-54" fill="none" stroke="#3A2A16" stroke-width="2"/>
+        <circle cx="345" cy="252" r="5" fill="#D28A3C"/><circle cx="252" cy="262" r="5" fill="#D28A3C"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#3A2A16">Kids &amp; Toys</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#3A2A16" opacity=".6">36 PIECES</text>
+</svg>

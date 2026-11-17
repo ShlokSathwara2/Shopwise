@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Traditional Pick Up Sticks Game">
+  <defs>
+    <linearGradient id="bg840" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F1DEB4"/>
+      <stop offset="100%" stop-color="#FEF7E7"/>
+    </linearGradient>
+    <filter id="grain840">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft840"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg840)"/>
+  <circle cx="337" cy="164" r="145" fill="#D28A3C" opacity=".16" filter="url(#soft840)"/>
+  <circle cx="187" cy="424" r="72" fill="#D28A3C" opacity=".08" filter="url(#soft840)"/>
+  <path d="M60 110h480" stroke="#3A2A16" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#3A2A16" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#3A2A16" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#3A2A16" opacity=".55" text-anchor="end">23570</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#3A2A16" opacity=".07">TP</text>
+  <g transform="rotate(0 300 380)">
+        <rect x="212" y="342" width="86" height="86" rx="8" fill="#FEF7E7" stroke="#3A2A16" stroke-width="2.4"/>
+        <rect x="310" y="342" width="86" height="86" rx="8" fill="#FEF7E7" stroke="#3A2A16" stroke-width="2.4"/>
+        <circle cx="255" cy="385" r="9" fill="none" stroke="#D28A3C" stroke-width="2"/>
+        <path d="M353 370l22 40h-44l22-40z" fill="none" stroke="#D28A3C" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M300 318c-6-36 16-58 44-64M300 318c-30-6-48-26-46-54" fill="none" stroke="#3A2A16" stroke-width="2"/>
+        <circle cx="345" cy="252" r="5" fill="#D28A3C"/><circle cx="252" cy="262" r="5" fill="#D28A3C"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#3A2A16" opacity=".62">KIDS &amp; TOYS</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#3A2A16" opacity=".55" text-anchor="end">No. 840</text>
+  <rect width="600" height="750" filter="url(#grain840)" opacity=".5"/>
+</svg>

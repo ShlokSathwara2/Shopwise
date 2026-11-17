@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Christmas">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#CFD8C6"/><stop offset="100%" stop-color="#F4F5EC"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#A33A2C" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#A33A2C" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#223427" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <path d="M300 214v244" stroke="#223427" stroke-width="2"/>
+        <path d="M300 250c-70 8-98 74-92 118 34-6 70-34 92-72 22 38 58 66 92 72 6-44-22-110-92-118z" fill="#F4F5EC" stroke="#223427" stroke-width="2.4"/>
+        <circle cx="300" cy="388" r="16" fill="#A33A2C" opacity=".85"/>
+        <path d="M300 432l10 22 24 3-18 17 4 24-20-11-20 11 4-24-18-17 24-3 10-22z" fill="#A33A2C" opacity=".9"/>
+        <circle cx="240" cy="302" r="4" fill="#A33A2C"/><circle cx="356" cy="286" r="4" fill="#A33A2C"/><circle cx="338" cy="338" r="4" fill="#A33A2C"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#223427">Christmas</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#223427" opacity=".6">61 PIECES</text>
+</svg>

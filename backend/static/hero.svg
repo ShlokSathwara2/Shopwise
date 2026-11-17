@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Home Decor">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#DCE1D0"/><stop offset="100%" stop-color="#F5F3E8"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#7D9070" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#7D9070" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#2E3A2B" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <ellipse cx="300" cy="470" rx="120" ry="24" fill="#2E3A2B" opacity=".12"/>
+        <path d="M246 268h108c-4 56-18 94-54 150-36-56-50-94-54-150z" fill="#F5F3E8" stroke="#2E3A2B" stroke-width="2.4"/>
+        <path d="M300 268v150M266 300c8 30 20 58 34 84M334 300c-8 30-20 58-34 84" fill="none" stroke="#7D9070" stroke-width="1.6" opacity=".75"/>
+        <path d="M300 268c-6-42 18-72 54-82M300 268c-34-18-60-16-82 6" fill="none" stroke="#2E3A2B" stroke-width="2"/>
+        <path d="M354 186c18-4 30 4 34 20-16 6-30 0-34-20zM218 274c-14-8-20-20-14-34 14 6 20 18 14 34z" fill="#7D9070" opacity=".85"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#2E3A2B">Home Decor</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#2E3A2B" opacity=".6">122 PIECES</text>
+</svg>

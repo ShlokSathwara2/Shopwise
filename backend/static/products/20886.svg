@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Box Of 9 Pebble Candles">
+  <defs>
+    <linearGradient id="bg39" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F0DCB6"/>
+      <stop offset="100%" stop-color="#FFF8E7"/>
+    </linearGradient>
+    <filter id="grain39">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft39"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg39)"/>
+  <circle cx="375" cy="213" r="110" fill="#C8963E" opacity=".16" filter="url(#soft39)"/>
+  <circle cx="225" cy="473" r="55" fill="#C8963E" opacity=".08" filter="url(#soft39)"/>
+  <path d="M60 110h480" stroke="#3D2C18" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#3D2C18" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#3D2C18" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#3D2C18" opacity=".55" text-anchor="end">20886</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#3D2C18" opacity=".07">BO</text>
+  <g transform="rotate(2 300 380)">
+        <ellipse cx="300" cy="480" rx="96" ry="20" fill="#3D2C18" opacity=".12"/>
+        <path d="M238 270h124l34 100H204l34-100z" fill="#FFF8E7" stroke="#3D2C18" stroke-width="2.4"/>
+        <path d="M300 370v92M270 466h60" fill="none" stroke="#3D2C18" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="300" cy="292" r="5" fill="#C8963E"/>
+        <path d="M188 410c22 34 62 52 112 52s90-18 112-52" fill="none" stroke="#C8963E" stroke-width="1.8" opacity=".55"/>
+        <path d="M176 438c30 40 76 60 124 60s94-20 124-60" fill="none" stroke="#C8963E" stroke-width="1.2" opacity=".3"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#3D2C18" opacity=".62">LIGHTING</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#3D2C18" opacity=".55" text-anchor="end">No. 039</text>
+  <rect width="600" height="750" filter="url(#grain39)" opacity=".5"/>
+</svg>

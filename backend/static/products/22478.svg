@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750" role="img" aria-label="Birdhouse Garden Marker">
+  <defs>
+    <linearGradient id="bg489" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D7E0C7"/>
+      <stop offset="100%" stop-color="#F3F6EA"/>
+    </linearGradient>
+    <filter id="grain489">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+    <filter id="soft489"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bg489)"/>
+  <circle cx="325" cy="207" r="135" fill="#5F7E48" opacity=".16" filter="url(#soft489)"/>
+  <circle cx="175" cy="467" r="67" fill="#5F7E48" opacity=".08" filter="url(#soft489)"/>
+  <path d="M60 110h480" stroke="#293823" stroke-width="1" opacity=".20"/>
+  <path d="M60 640h480" stroke="#293823" stroke-width="1" opacity=".20"/>
+  <text x="60" y="78" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="5" fill="#293823" opacity=".72">SHOPWISE</text>
+  <text x="540" y="78" font-family="Georgia, serif" font-size="14" fill="#293823" opacity=".55" text-anchor="end">22478</text>
+  <text x="58" y="300" font-family="Georgia, serif" font-size="180" fill="#293823" opacity=".07">BG</text>
+  <g transform="rotate(0 300 380)">
+        <path d="M300 476V262" stroke="#293823" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M300 312c-56 4-86-34-84-80 50-2 80 32 84 80zM300 372c56 4 86-34 84-80-50-2-80 32-84 80zM300 428c-48 2-76-28-74-68 44-2 70 26 74 68z" fill="#F3F6EA" stroke="#293823" stroke-width="2.2"/>
+        <path d="M300 312c-26-12-48-34-60-60M300 372c26-12 48-34 60-60M300 428c-22-10-40-28-50-50" fill="none" stroke="#5F7E48" stroke-width="1.4" opacity=".65"/>
+        <path d="M258 476h84" stroke="#293823" stroke-width="2" opacity=".3"/>
+    </g>
+  <text x="60" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="3.5" fill="#293823" opacity=".62">GARDEN &amp; OUTDOOR</text>
+  <text x="540" y="690" font-family="Georgia, serif" font-size="17" fill="#293823" opacity=".55" text-anchor="end">No. 489</text>
+  <rect width="600" height="750" filter="url(#grain489)" opacity=".5"/>
+</svg>

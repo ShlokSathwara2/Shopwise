@@ -1,0 +1,35 @@
+/* Shopwise — admin products & orders refinements */
+
+.admin-table--products { min-width: 720px; }
+.admin-table--products td:nth-child(3),
+.admin-table--products td:nth-child(5) { white-space: nowrap; }
+.admin-table--orders { min-width: 830px; }
+.admin-table--orders td:nth-child(3) { min-width: 95px; }
+.admin-table--orders td:nth-child(5) { white-space: nowrap; }
+.admin-table .status-pill { font-size: 6.5px; padding: 3px 6px; }
+.admin-table .status-pill::before { width: 4px; height: 4px; }
+.admin-table--orders .status-pill--delivered,
+.admin-table--orders .status-pill--confirmed { background: #e7eee2; color: #526b47; }
+
+.admin-card .admin-table .button { font-size: 8px; }
+.admin-table td:last-child { padding-right: 5px; }
+.admin-table th:last-child { padding-right: 5px; }
+
+.admin-page .modal { padding: 26px; }
+.admin-page .modal__form .field > span { font-size: 8px; }
+.admin-page .modal__form .field input,
+.admin-page .modal__form .field select,
+.admin-page .modal__form .field textarea { min-height: 38px; font-size: 11px; }
+.admin-page .modal__form .input-with-icon { min-height: 38px; }
+.admin-page .modal__form .input-with-icon input { min-height: 34px; }
+.admin-page .modal__actions .button { min-height: 38px; font-size: 9px; }
+.admin-page .modal__actions .button--danger { min-height: 38px; font-size: 9px; }
+
+.admin-table-wrap::-webkit-scrollbar { height: 6px; }
+.admin-table-wrap::-webkit-scrollbar-thumb { border-radius: 999px; background: #d6cdbd; }
+.admin-table-wrap::-webkit-scrollbar-track { background: transparent; }
+
+@media (max-width: 900px) {
+  .admin-table--products,
+  .admin-table--orders { min-width: 700px; }
+}

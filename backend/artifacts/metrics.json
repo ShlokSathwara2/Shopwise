@@ -1,0 +1,311 @@
+{
+  "trained_at": "2026-11-12T17:27:03Z",
+  "training_seconds": 4.72,
+  "best_model": "Hybrid",
+  "models": {
+    "Popularity": {
+      "evaluated_users": 750,
+      "precision@5": 0.092,
+      "recall@5": 0.0247,
+      "hit_rate@5": 0.3853,
+      "ndcg@5": 0.0916,
+      "coverage@5": 0.018,
+      "precision@10": 0.0743,
+      "recall@10": 0.0399,
+      "hit_rate@10": 0.48,
+      "ndcg@10": 0.0818,
+      "coverage@10": 0.028,
+      "offline_ms_per_user": 0.002,
+      "description": "Most purchased items ranked by number of unique buyers in the training period.",
+      "params": {
+        "signal": "unique buyers",
+        "personalised": false
+      }
+    },
+    "Content-Based": {
+      "evaluated_users": 750,
+      "precision@5": 0.0965,
+      "recall@5": 0.0343,
+      "hit_rate@5": 0.336,
+      "ndcg@5": 0.1032,
+      "coverage@5": 0.509,
+      "precision@10": 0.0824,
+      "recall@10": 0.0553,
+      "hit_rate@10": 0.4547,
+      "ndcg@10": 0.0973,
+      "coverage@10": 0.657,
+      "offline_ms_per_user": 0.233,
+      "description": "TF-IDF over product title, description and category, scored with cosine similarity to the user's purchase profile.",
+      "params": {
+        "features": 4666,
+        "ngrams": "1-2",
+        "similarity": "cosine"
+      }
+    },
+    "Item-CF": {
+      "evaluated_users": 750,
+      "precision@5": 0.0864,
+      "recall@5": 0.0308,
+      "hit_rate@5": 0.312,
+      "ndcg@5": 0.0918,
+      "coverage@5": 0.281,
+      "precision@10": 0.0777,
+      "recall@10": 0.0532,
+      "hit_rate@10": 0.4653,
+      "ndcg@10": 0.0904,
+      "coverage@10": 0.386,
+      "offline_ms_per_user": 0.064,
+      "description": "Customers who bought this also bought: item-item cosine similarity over the binary purchase matrix.",
+      "params": {
+        "neighbourhood": "all items",
+        "similarity": "cosine"
+      }
+    },
+    "SVD (MF)": {
+      "evaluated_users": 750,
+      "precision@5": 0.1093,
+      "recall@5": 0.0366,
+      "hit_rate@5": 0.388,
+      "ndcg@5": 0.1192,
+      "coverage@5": 0.259,
+      "precision@10": 0.0956,
+      "recall@10": 0.0592,
+      "hit_rate@10": 0.5227,
+      "ndcg@10": 0.1118,
+      "coverage@10": 0.348,
+      "offline_ms_per_user": 0.36,
+      "description": "Truncated SVD on the log-scaled implicit feedback matrix; reconstructs user-item preference scores.",
+      "params": {
+        "rank": 16,
+        "rank_selection": [
+          {
+            "rank": 16,
+            "ndcg@10": 0.1347,
+            "hit_rate@10": 0.5817
+          },
+          {
+            "rank": 24,
+            "ndcg@10": 0.1285,
+            "hit_rate@10": 0.5845
+          },
+          {
+            "rank": 32,
+            "ndcg@10": 0.128,
+            "hit_rate@10": 0.5899
+          },
+          {
+            "rank": 48,
+            "ndcg@10": 0.1177,
+            "hit_rate@10": 0.579
+          }
+        ],
+        "random_state": 42
+      }
+    },
+    "Hybrid": {
+      "evaluated_users": 750,
+      "precision@5": 0.1195,
+      "recall@5": 0.0419,
+      "hit_rate@5": 0.4067,
+      "ndcg@5": 0.1267,
+      "coverage@5": 0.296,
+      "precision@10": 0.1089,
+      "recall@10": 0.0704,
+      "hit_rate@10": 0.5667,
+      "ndcg@10": 0.124,
+      "coverage@10": 0.407,
+      "offline_ms_per_user": 0.297,
+      "description": "Weighted blend of content similarity and collaborative signals (item-CF + SVD). Weights selected on the validation split.",
+      "params": {
+        "content_weight": 0.2,
+        "item_cf_weight": 0.2,
+        "svd_weight": 0.6,
+        "tuning_metric": "validation NDCG@10"
+      }
+    }
+  },
+  "validation": {
+    "selected": {
+      "content_weight": 0.2,
+      "item_cf_weight": 0.2,
+      "svd_weight": 0.6,
+      "ndcg@10": 0.1489,
+      "hit_rate@10": 0.609,
+      "precision@10": 0.1257
+    },
+    "grid_top5": [
+      {
+        "content_weight": 0.2,
+        "item_cf_weight": 0.2,
+        "svd_weight": 0.6,
+        "ndcg@10": 0.1489,
+        "hit_rate@10": 0.609,
+        "precision@10": 0.1257
+      },
+      {
+        "content_weight": 0.3,
+        "item_cf_weight": 0.35,
+        "svd_weight": 0.35,
+        "ndcg@10": 0.1486,
+        "hit_rate@10": 0.6158,
+        "precision@10": 0.1272
+      },
+      {
+        "content_weight": 0.2,
+        "item_cf_weight": 0.4,
+        "svd_weight": 0.4,
+        "ndcg@10": 0.1479,
+        "hit_rate@10": 0.6049,
+        "precision@10": 0.1253
+      },
+      {
+        "content_weight": 0.3,
+        "item_cf_weight": 0.175,
+        "svd_weight": 0.525,
+        "ndcg@10": 0.1477,
+        "hit_rate@10": 0.6185,
+        "precision@10": 0.1252
+      },
+      {
+        "content_weight": 0.1,
+        "item_cf_weight": 0.45,
+        "svd_weight": 0.45,
+        "ndcg@10": 0.1463,
+        "hit_rate@10": 0.6008,
+        "precision@10": 0.1241
+      }
+    ],
+    "grid_best_per_alpha": [
+      {
+        "content_weight": 0.1,
+        "item_cf_weight": 0.45,
+        "svd_weight": 0.45,
+        "ndcg@10": 0.1463,
+        "hit_rate@10": 0.6008,
+        "precision@10": 0.1241
+      },
+      {
+        "content_weight": 0.2,
+        "item_cf_weight": 0.2,
+        "svd_weight": 0.6,
+        "ndcg@10": 0.1489,
+        "hit_rate@10": 0.609,
+        "precision@10": 0.1257
+      },
+      {
+        "content_weight": 0.3,
+        "item_cf_weight": 0.35,
+        "svd_weight": 0.35,
+        "ndcg@10": 0.1486,
+        "hit_rate@10": 0.6158,
+        "precision@10": 0.1272
+      },
+      {
+        "content_weight": 0.4,
+        "item_cf_weight": 0.15,
+        "svd_weight": 0.45,
+        "ndcg@10": 0.1453,
+        "hit_rate@10": 0.6104,
+        "precision@10": 0.1233
+      },
+      {
+        "content_weight": 0.5,
+        "item_cf_weight": 0.125,
+        "svd_weight": 0.375,
+        "ndcg@10": 0.1407,
+        "hit_rate@10": 0.5886,
+        "precision@10": 0.1188
+      },
+      {
+        "content_weight": 0.6,
+        "item_cf_weight": 0.1,
+        "svd_weight": 0.3,
+        "ndcg@10": 0.133,
+        "hit_rate@10": 0.579,
+        "precision@10": 0.1132
+      },
+      {
+        "content_weight": 0.7,
+        "item_cf_weight": 0.075,
+        "svd_weight": 0.225,
+        "ndcg@10": 0.1253,
+        "hit_rate@10": 0.5545,
+        "precision@10": 0.1068
+      },
+      {
+        "content_weight": 0.8,
+        "item_cf_weight": 0.1,
+        "svd_weight": 0.1,
+        "ndcg@10": 0.1197,
+        "hit_rate@10": 0.5463,
+        "precision@10": 0.1026
+      },
+      {
+        "content_weight": 0.9,
+        "item_cf_weight": 0.075,
+        "svd_weight": 0.025,
+        "ndcg@10": 0.1133,
+        "hit_rate@10": 0.5286,
+        "precision@10": 0.0971
+      }
+    ],
+    "validation_users": 734,
+    "svd_rank_selection": [
+      {
+        "rank": 16,
+        "ndcg@10": 0.1347,
+        "hit_rate@10": 0.5817
+      },
+      {
+        "rank": 24,
+        "ndcg@10": 0.1285,
+        "hit_rate@10": 0.5845
+      },
+      {
+        "rank": 32,
+        "ndcg@10": 0.128,
+        "hit_rate@10": 0.5899
+      },
+      {
+        "rank": 48,
+        "ndcg@10": 0.1177,
+        "hit_rate@10": 0.579
+      }
+    ]
+  },
+  "dataset": {
+    "catalog_products": 1000,
+    "customers": 750,
+    "purchase_lines": 139384,
+    "unique_user_product_pairs": 75667,
+    "sale_orders": 7464,
+    "train_pairs": 45417,
+    "validation_pairs": 15113,
+    "test_pairs": 15137,
+    "evaluation_users": 750,
+    "validation_users": 734,
+    "sparsity": 0.8991,
+    "avg_distinct_products_per_customer": 100.9,
+    "avg_test_items_per_customer": 20.2,
+    "split_method": "Per-customer temporal holdout - latest 20% of distinct products for test, preceding 20% for validation",
+    "date_range": [
+      "2025-03-24 06:26:40.953716",
+      "2026-11-12 17:23:59.805457"
+    ],
+    "test_fraction": 0.2
+  },
+  "source": {
+    "name": "UCI Online Retail II",
+    "url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+    "raw_lines": 775918,
+    "raw_customers": 5852,
+    "raw_products": 4608
+  },
+  "plots": {
+    "model_comparison": "D:\\Projects for the subjects\\Management Information System\\shopwise\\backend\\artifacts\\plots\\model_comparison.png",
+    "precision_recall_at_k": "D:\\Projects for the subjects\\Management Information System\\shopwise\\backend\\artifacts\\plots\\precision_recall_at_k.png",
+    "coverage": "D:\\Projects for the subjects\\Management Information System\\shopwise\\backend\\artifacts\\plots\\coverage.png",
+    "response_times": "D:\\Projects for the subjects\\Management Information System\\shopwise\\backend\\artifacts\\plots\\response_times.png",
+    "hybrid_tuning": "D:\\Projects for the subjects\\Management Information System\\shopwise\\backend\\artifacts\\plots\\hybrid_tuning.png"
+  }
+}

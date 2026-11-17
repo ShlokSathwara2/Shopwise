@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Runtime
+logs/
+*.log
+backend/shopwise.db-wal
+backend/shopwise.db-shm
+backend/shopwise.db-journal
+
+# Raw UCI cache (regenerate with backend/app/ml/build_dataset.py)
+backend/data/raw/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

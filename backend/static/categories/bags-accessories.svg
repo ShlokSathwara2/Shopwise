@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Bags &amp; Accessories">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8D2B7"/><stop offset="100%" stop-color="#FAF2E6"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#A97742" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#A97742" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#3B2A1B" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <ellipse cx="300" cy="470" rx="112" ry="22" fill="#3B2A1B" opacity=".12"/>
+        <path d="M225 310h150l22 146H203l22-146z" fill="#FAF2E6" stroke="#3B2A1B" stroke-width="2.4"/>
+        <path d="M262 310v-26c0-22 17-38 38-38s38 16 38 38v26" fill="none" stroke="#3B2A1B" stroke-width="2.4"/>
+        <path d="M244 356h112M233 390h134" stroke="#A97742" stroke-width="1.4" opacity=".55"/>
+        <circle cx="300" cy="404" r="5" fill="#A97742"/>
+        <path d="M203 424c64 16 130 16 194 0" fill="none" stroke="#A97742" stroke-width="1.2" opacity=".35"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#3B2A1B">Bags &amp; Accessories</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#3B2A1B" opacity=".6">110 PIECES</text>
+</svg>

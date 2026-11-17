@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Garden &amp; Outdoor">
+  <defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#D7E0C7"/><stop offset="100%" stop-color="#F3F6EA"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#c)"/>
+  <circle cx="650" cy="260" r="220" fill="#5F7E48" opacity=".12"/>
+  <circle cx="230" cy="830" r="160" fill="#5F7E48" opacity=".08"/>
+  <text x="64" y="92" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#293823" opacity=".6">SHOPWISE / EDIT</text>
+  <g transform="translate(150 180) scale(1.28) rotate(-3 300 380)">
+        <path d="M300 476V262" stroke="#293823" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M300 312c-56 4-86-34-84-80 50-2 80 32 84 80zM300 372c56 4 86-34 84-80-50-2-80 32-84 80zM300 428c-48 2-76-28-74-68 44-2 70 26 74 68z" fill="#F3F6EA" stroke="#293823" stroke-width="2.2"/>
+        <path d="M300 312c-26-12-48-34-60-60M300 372c26-12 48-34 60-60M300 428c-22-10-40-28-50-50" fill="none" stroke="#5F7E48" stroke-width="1.4" opacity=".65"/>
+        <path d="M258 476h84" stroke="#293823" stroke-width="2" opacity=".3"/>
+    </g>
+  <text x="64" y="950" font-family="Georgia, serif" font-size="58" fill="#293823">Garden &amp; Outdoor</text>
+  <text x="66" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4" fill="#293823" opacity=".6">55 PIECES</text>
+</svg>

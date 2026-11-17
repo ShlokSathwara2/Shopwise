@@ -1,0 +1,71 @@
+Shopwise E2E session - live API log
+
+22:42:32 | INFO    | Shopwise API ready | static=D:\Projects for the subjects\Management Information System\shopwise\backend\static | frontend=D:\Projects for the subjects\Management Information System\shopwise\frontend\dist
+22:53:24 | INFO    | POST /api/auth/login -> 200 (72.0 ms)
+INFO:     127.0.0.1:53327 - "POST /api/auth/login HTTP/1.1" 200 OK
+22:53:24 | INFO    | GET /api/products/categories -> 200 (7.3 ms)
+INFO:     127.0.0.1:53327 - "GET /api/products/categories HTTP/1.1" 200 OK
+22:53:24 | INFO    | GET /api/cart -> 200 (14.1 ms)
+INFO:     127.0.0.1:60222 - "GET /api/cart HTTP/1.1" 200 OK
+22:53:24 | INFO    | GET /api/products -> 200 (16.6 ms)
+INFO:     127.0.0.1:52559 - "GET /api/products?sort=featured&page_size=8 HTTP/1.1" 200 OK
+22:53:24 | INFO    | GET /api/recommendations/trending -> 200 (19.0 ms)
+INFO:     127.0.0.1:60745 - "GET /api/recommendations/trending?limit=4 HTTP/1.1" 200 OK
+22:53:24 | INFO    | GET /api/recommendations/home -> 200 (30.7 ms)
+INFO:     127.0.0.1:50759 - "GET /api/recommendations/home?limit=8 HTTP/1.1" 200 OK
+...
+
+INFO:     127.0.0.1:56303 - "POST /api/cart/items HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56303 - "GET /cart HTTP/1.1" 200 OK
+22:53:51 | INFO    | GET /api/auth/me -> 200 (8.7 ms)
+INFO:     127.0.0.1:50709 - "GET /api/auth/me HTTP/1.1" 200 OK
+22:53:51 | INFO    | GET /api/cart -> 200 (8.1 ms)
+INFO:     127.0.0.1:50709 - "GET /api/cart HTTP/1.1" 200 OK
+22:53:51 | INFO    | GET /api/recommendations/home -> 200 (25.0 ms)
+INFO:     127.0.0.1:56303 - "GET /api/recommendations/home?limit=4 HTTP/1.1" 200 OK
+22:53:51 | INFO    | GET /api/recommendations/home -> 200 (13.5 ms)
+INFO:     127.0.0.1:50709 - "GET /api/recommendations/home?limit=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50709 - "GET /static/products/10002.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65297 - "GET /static/products/22551.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56303 - "GET /static/products/21870.svg HTTP/1.1" 200 OK
+22:53:52 | INFO    | PATCH /api/cart/items/4 -> 200 (10.8 ms)
+INFO:     127.0.0.1:56303 - "PATCH /api/cart/items/4 HTTP/1.1" 200 OK
+22:53:52 | INFO    | DELETE /api/cart/items/4 -> 200 (29.1 ms)
+INFO:     127.0.0.1:56303 - "DELETE /api/cart/items/4 HTTP/1.1" 200 OK
+22:53:59 | INFO    | POST /api/orders/checkout -> 201 (12.4 ms)
+INFO:     127.0.0.1:62049 - "POST /api/orders/checkout HTTP/1.1" 201 Created
+22:53:59 | INFO    | GET /api/cart -> 200 (2.4 ms)
+INFO:     127.0.0.1:62049 - "GET /api/cart HTTP/1.1" 200 OK
+22:53:59 | INFO    | GET /api/orders/7464 -> 200 (5.3 ms)
+INFO:     127.0.0.1:62049 - "GET /api/orders/7464 HTTP/1.1" 200 OK
+22:54:02 | INFO    | GET /api/orders -> 200 (13.3 ms)
+INFO:     127.0.0.1:62049 - "GET /api/orders HTTP/1.1" 200 OK
+...
+
+22:54:26 | INFO    | POST /api/auth/login -> 200 (66.3 ms)
+INFO:     127.0.0.1:52297 - "POST /api/auth/login HTTP/1.1" 200 OK
+22:54:26 | INFO    | GET /api/cart -> 200 (4.6 ms)
+INFO:     127.0.0.1:49847 - "GET /api/cart HTTP/1.1" 200 OK
+22:54:27 | INFO    | GET /api/admin/stats -> 200 (346.1 ms)
+INFO:     127.0.0.1:52297 - "GET /api/admin/stats HTTP/1.1" 200 OK
+22:55:00 | INFO    | POST /api/admin/retrain -> 200 (10309.4 ms)
+[ml] data: {'catalog_products': 1001, 'customers': 750, 'purchase_lines': 139384, 'unique_user_product_pairs': 75667, 'sale_orders': 7464, 'train_pairs': 45417, 'validation_pairs': 15113, 'test_pairs': 15137, 'evaluation_users': 750, 'validation_users': 734, 'sparsity': 0.8992, 'avg_distinct_products_per_customer': 100.9, 'avg_test_items_per_customer': 20.2, 'split_method': 'Per-customer temporal holdout - latest 20% of distinct products for test, preceding 20% for validation', 'date_range': ['2025-03-24 06:26:40.953716', '2026-11-12 17:23:59.805457'], 'test_fraction': 0.2}
+[ml] model comparison (test split)
+  Popularity     P@5=0.0917 P@10=0.0743 R@10=0.0399 NDCG@10=0.0819 Hit@10=0.4800 Cov@10=2.80%
+  Content-Based  P@5=0.0963 P@10=0.0825 R@10=0.0553 NDCG@10=0.0974 Hit@10=0.4560 Cov@10=65.63%
+  Item-CF        P@5=0.0864 P@10=0.0777 R@10=0.0532 NDCG@10=0.0904 Hit@10=0.4653 Cov@10=38.56%
+  SVD (MF)       P@5=0.1091 P@10=0.0956 R@10=0.0592 NDCG@10=0.1118 Hit@10=0.5227 Cov@10=34.77%
+  Hybrid         P@5=0.1208 P@10=0.1075 R@10=0.0711 NDCG@10=0.1238 Hit@10=0.5627 Cov@10=41.46%
+[ml] hybrid weights: content=0.20, item-cf=0.40, svd=0.40
+[ml] saved artifacts to D:\Projects for the subjects\Management Information System\shopwise\backend\artifacts in 7.5s
+INFO:     127.0.0.1:62755 - "POST /api/admin/retrain HTTP/1.1" 200 OK
+...
+
+22:57:04 | INFO    | POST /api/admin/retrain -> 200 (6243.2 ms)
+INFO:     127.0.0.1:50251 - "POST /api/admin/retrain HTTP/1.1" 200 OK
+22:57:11 | INFO    | POST /api/cart/items -> 200 (6.0 ms)
+INFO:     127.0.0.1:64054 - "POST /api/cart/items HTTP/1.1" 200 OK
+22:57:11 | INFO    | POST /api/cart/items -> 200 (6.1 ms)
+INFO:     127.0.0.1:64055 - "POST /api/cart/items HTTP/1.1" 200 OK
+22:57:11 | INFO    | POST /api/cart/items -> 200 (5.3 ms)
+INFO:     127.0.0.1:64056 - "POST /api/cart/items HTTP/1.1" 200 OK
